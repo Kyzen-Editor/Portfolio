@@ -242,8 +242,8 @@
   .clip-card:hover{ border-color:var(--blue); transform:translateY(-4px); box-shadow:0 12px 40px rgba(59,130,246,0.15); }
   .clip-tag{ display:flex; justify-content:space-between; align-items:center; padding:12px 16px; border-bottom:1px solid var(--line); font-family:'Space Mono',monospace; font-size:11px; color:var(--muted); letter-spacing:0.06em; }
   .clip-tag .num{ color:var(--blue-soft); }
-  .clip-media{ background:var(--panel-2); min-height:420px; display:flex; align-items:center; justify-content:center; }
-  .clip-media iframe, .clip-media blockquote{ width:100% !important; margin:0 !important; }
+  .clip-media{ background:#000; aspect-ratio:9/16; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+  .clip-media video{ width:100%; height:100%; object-fit:cover; display:block; background:#000; }
 
   /* ===== Reviews ===== */
   #reviews{ text-align:center; }
@@ -352,7 +352,7 @@
 
   <section id="work-header">
     <div class="eyebrow reveal">Selected work</div>
-    <h2 class="reveal">Six clips, cut to hold attention.</h2>
+    <h2 class="reveal">5 clips that hold retention.</h2>
     <p class="hero-sub reveal">A working sample of recent edits — motion graphics, text animation, and pacing built for short-form platforms. Click any card to watch.</p>
   </section>
   <div class="reel-grid" id="work">
@@ -360,42 +360,45 @@
     <div class="clip-card reveal">
       <div class="clip-tag"><span class="num">CLIP 01</span><span>Reel</span></div>
       <div class="clip-media">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DbQYpqmCV77/" data-instgrm-version="14"></blockquote>
+        <video controls playsinline preload="metadata" poster="">
+          <source src="videos/clip-1.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
     <div class="clip-card reveal">
       <div class="clip-tag"><span class="num">CLIP 02</span><span>Reel</span></div>
       <div class="clip-media">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DadB8GnifoY/" data-instgrm-version="14"></blockquote>
+        <video controls playsinline preload="metadata" poster="">
+          <source src="videos/clip-2.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
     <div class="clip-card reveal">
       <div class="clip-tag"><span class="num">CLIP 03</span><span>Reel</span></div>
       <div class="clip-media">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DZ1ytLfOo05/" data-instgrm-version="14"></blockquote>
+        <video controls playsinline preload="metadata" poster="">
+          <source src="videos/clip-3.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
     <div class="clip-card reveal">
       <div class="clip-tag"><span class="num">CLIP 04</span><span>Reel</span></div>
       <div class="clip-media">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DYUN1iMpcBY/" data-instgrm-version="14"></blockquote>
+        <video controls playsinline preload="metadata" poster="">
+          <source src="videos/clip-4.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
     <div class="clip-card reveal">
       <div class="clip-tag"><span class="num">CLIP 05</span><span>Reel</span></div>
       <div class="clip-media">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DYMzwSQp4cr/" data-instgrm-version="14"></blockquote>
-      </div>
-    </div>
-
-    <div class="clip-card reveal">
-      <div class="clip-tag"><span class="num">CLIP 06</span><span>Reel</span></div>
-      <div class="clip-media">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DXdv6_4grui/" data-instgrm-version="14"></blockquote>
+        <video controls playsinline preload="metadata" poster="">
+          <source src="videos/clip-5.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
@@ -435,7 +438,6 @@
   <a href="#hero">Back to top ↑</a>
 </footer>
 
-<script async src="//www.instagram.com/embed.js"></script>
 <script>
 (function(){
   /* ---- Custom cursor ---- */
